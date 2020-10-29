@@ -27,3 +27,23 @@ If you are one of those people that doesn't like to depend on other sites for yo
 ```
 b();function b(){var c=c||webkitSpeechRecognition,a=new c;a.onstart=function(){};a.onspeechend=function(){a.stop();b()};a.onresult=function(d){console.log(d.results[0][0].transcript);onCommand(d.results[0][0].transcript)};a.start()};
 ```
+
+## More examples
+
+```
+function onCommand(vc) {
+  if (vc == "chocolate cake") {
+    alert("you said chocolate cake");
+  }
+  
+  if (vc == "vanilla cake") {
+    alert("you said vanilla cake");
+  }
+}
+```
+
+```
+function onCommand(vc) {
+  alert("you said" + vc);
+}
+```
