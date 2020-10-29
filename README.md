@@ -44,6 +44,6 @@ function onCommand(vc) {
 
 ```
 function onCommand(vc) {
-  alert("you said" + vc);
+  alert("you said " + vc);
 }
 ```
