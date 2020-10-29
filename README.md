@@ -9,8 +9,7 @@ All you have to do to use VCJS is add in a script tag to your HTML file.
 
 Run code on a voice command with something like this
 
-    function onCommand(vc) {
-    if (vc == "test") {
-    alert("Tested");
-    }
-    }
+```
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
