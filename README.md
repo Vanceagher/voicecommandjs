@@ -17,7 +17,7 @@ If you don't want the command variable to be `vc` then change it to whatever you
 ```
 function onCommand(vc) {
   if (vc == "chocolate cake") {
-    alert("you said "chocolate cake");
+    alert("you said chocolate cake");
   }
 }
 ```
