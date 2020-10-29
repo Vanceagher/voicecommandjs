@@ -5,4 +5,14 @@ A simple javascript tool to run JavaScript code when a command is said.
 
 All you have to do to use VCJS is add in a script tag to your HTML file.
 
-`<script`
+`<script src="https://vanceagher.github.io/voicecommandjs/vcjs.min.js"></script>`
+
+Run code on a voice command with something like this
+
+```
+function onCommand(vc) {
+  if (vc == "test") {
+    alert("Tested");
+  }
+}
+```
