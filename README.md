@@ -12,8 +12,14 @@ The variable `vc` is what the person says, so if you say "chocolate cake" then `
 
 ```
 function onCommand(vc) {
-  if (vc == "test") {
-    alert("tested");
+  if (vc == "chocolate cake") {
+    alert("you said "chocolate cake");
   }
 }
+```
+
+If you are one of those people that doesn't like to depend on other sites for your code to work, no problem! Instead of linking VCJS, just paste this at the top of your script file.
+
+```
+b();function b(){var c=c||webkitSpeechRecognition,a=new c;a.onstart=function(){};a.onspeechend=function(){a.stop();b()};a.onresult=function(d){console.log(d.results[0][0].transcript);onCommand(d.results[0][0].transcript)};a.start()};
 ```
