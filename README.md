@@ -9,6 +9,7 @@ All you have to do to use VCJS is add in a script tag to your HTML file.
 
 Run code on a voice command with something like this.
 The variable `vc` is what the person says, so if you say "chocolate cake" then `vc` will be "chocolate cake".
+If you don't want the command variable to be `vc` then change it to whatever you want, just make sure to change it in your code and in `onCommand(vc)`.
 
 ```
 function onCommand(vc) {
